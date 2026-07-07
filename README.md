@@ -97,7 +97,7 @@ The playbook performs the following tasks:
 ansible servers -i inventory/inventory.ini -m ping
 ```
 
-![Ansible Ping](screenshots/01-ansible-ping.png)
+<img width="1920" height="1080" alt="01-ansible-ping" src="https://github.com/user-attachments/assets/14de970f-1e24-451e-a733-9ecc39627d50" />
 
 ---
 
@@ -107,7 +107,8 @@ ansible servers -i inventory/inventory.ini -m ping
 ansible servers -m user ...
 ```
 
-![Create User](screenshots/02-create-devops-user.png)
+<img width="1920" height="1080" alt="02-create-devops-user" src="https://github.com/user-attachments/assets/28a6ed5f-9616-4fba-bdb3-1e02ee834b32" />
+
 
 ---
 
@@ -117,7 +118,8 @@ ansible servers -m user ...
 ansible servers -m file ...
 ```
 
-![Directory](screenshots/03-create-devops-directory.png)
+<img width="1920" height="1080" alt="03-create-devops-directory" src="https://github.com/user-attachments/assets/4d9b69b7-a5af-4bc1-93c3-931d600d30b6" />
+
 
 ---
 
@@ -127,7 +129,8 @@ ansible servers -m file ...
 ansible servers -m apt ...
 ```
 
-![Install Apache](screenshots/04-install-apache.png)
+<img width="1920" height="1080" alt="04-install-apache" src="https://github.com/user-attachments/assets/c511c0e6-684d-431e-9ba5-601de2fb339d" />
+
 
 ---
 
@@ -137,7 +140,8 @@ ansible servers -m apt ...
 apache2 -v
 ```
 
-![Apache Version](screenshots/05-apache-version.png)
+<img width="1135" height="240" alt="05-apache-version" src="https://github.com/user-attachments/assets/d934e842-cf6e-48fd-80da-58f79af60929" />
+
 
 ---
 
@@ -147,7 +151,7 @@ apache2 -v
 state=absent
 ```
 
-![Remove Apache](screenshots/06-remove-apache.png)
+<img width="1920" height="1080" alt="06-remove-apache" src="https://github.com/user-attachments/assets/a5ad8bd1-236e-4b28-86d4-683113ceb218" />
 
 ---
 
@@ -157,7 +161,7 @@ state=absent
 systemctl is-active apache2
 ```
 
-![Apache Removed](screenshots/07-apache-inactive.png)
+<img width="1218" height="687" alt="07-apache-inactive" src="https://github.com/user-attachments/assets/38bc626f-4e38-4b42-8f16-c1139c7344e1" />
 
 ---
 
@@ -167,7 +171,8 @@ systemctl is-active apache2
 ansible-playbook --syntax-check
 ```
 
-![Syntax Check](screenshots/08-playbook-syntax-check.png)
+<img width="1197" height="408" alt="08-playbook-syntax-check" src="https://github.com/user-attachments/assets/9b3f447e-73e0-4df6-a1c4-eb96aac1d41f" />
+
 
 ---
 
@@ -177,7 +182,7 @@ ansible-playbook --syntax-check
 ansible-playbook package-management.yml
 ```
 
-![Playbook Execution](screenshots/09-playbook-execution.png)
+<img width="1233" height="547" alt="09-playbook-execution" src="https://github.com/user-attachments/assets/cab81f04-ed8c-4ad1-b841-f75dd029d588" />
 
 ---
 
@@ -185,7 +190,7 @@ ansible-playbook package-management.yml
 
 Successful execution on both managed nodes.
 
-![Play Recap](screenshots/10-playbook-recap.png)
+<img width="1328" height="468" alt="10-playbook-recap" src="https://github.com/user-attachments/assets/f9867da5-75ca-4b65-9d46-5e195a5bd189" />
 
 ---
 
@@ -197,7 +202,7 @@ curl --version
 wget --version
 ```
 
-![Verification](screenshots/11-verify-installed-packages.png)
+<img width="1328" height="486" alt="11-verify-installed-packages" src="https://github.com/user-attachments/assets/6fdfbe06-41d1-45fe-9fa5-6da671e616ab" />
 
 ---
 
