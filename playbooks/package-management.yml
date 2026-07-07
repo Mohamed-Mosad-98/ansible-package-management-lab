@@ -1,1 +1,59 @@
+---
+- name: Package Management Playbook
+  hosts: servers
+  become: true
 
+  tasks:
+
+    - name: Remove old web package
+      apt:
+        name: apache2
+        state: absent
+
+    - name: Install required packages
+      apt:
+        name:
+          - git
+          - curl
+          - wget
+        state: present
+        update_cache: yes
+
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Ensure nginx service is enabled
+      service:
+        name: nginx
+        enabled: true
+
+    - name: Ensure nginx service is started
+      service:
+        name: nginx
+        state: started
+
+    - name: Create DevOps user
+      user:
+        name: devopsuser
+        shell: /bin/bash
+        state: present
+
+    - name: Create application directory
+      file:
+        path: /opt/devops
+        state: directory
+        owner: devopsuser
+        group: devopsuser
+        mode: "0755"
+
+    - name: Create info file
+      copy:
+        dest: /opt/devops/info.txt
+        content: |
+          DevOps Lab
+          Managed using Ansible Playbook
+        owner: devopsuser
+        group: devopsuser
+        mode: "0600"
